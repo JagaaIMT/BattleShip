@@ -1,0 +1,20 @@
+# .NET build files
+bin/
+obj/
+
+# Visual Studio cache files
+.vs/
+
+# User-specific files
+.vscode/
+*.user
+*.suo
+
+# Logs
+*.log
+
+# Environment-specific settings
+.env
+
+# Packages
+packages/

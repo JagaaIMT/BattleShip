@@ -1,0 +1,9 @@
+<!-- Components/Map/AllyMap.razor -->
+@inject HttpClient Http
+
+@code {
+    private int[,] gridData = new int[10, 10];
+}
+
+<h3>Enemy Map</h3>
+<Map GridData="gridData" /> 
