@@ -1,9 +1,111 @@
-<!-- Components/Map/Enemy.razor -->
-@inject HttpClient Http
+@page "/game"
+@inject BattleShip.App.Services.GameDataService GameDataService
+@inject BattleShip.App.Services.ApiService ApiService
+@using BattleShip.Models
 
 @code {
-    private int[,] gridData = new int[10, 10];
+    private int[,] gridData;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        GameDataService.OnChange += UpdateGridData;
+        UpdateGridData();
+    }
+
+    private void UpdateGridData()
+    {
+        if (GameDataService.Player2Grid != null)
+        {
+            gridData = ConvertTo2DArray(GameDataService.Player2Grid);
+            StateHasChanged();
+        }
+    }
+
+    private int[,] ConvertTo2DArray(List<List<int>> jaggedList)
+    {
+        if (jaggedList == null || jaggedList.Count == 0 || jaggedList[0].Count == 0)
+        {
+            return new int[0, 0];
+        }
+
+        int rows = jaggedList.Count;
+        int cols = jaggedList[0].Count;
+        int[,] array2D = new int[rows, cols];
+
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < cols; j++)
+            {
+                array2D[i, j] = jaggedList[i][j];
+            }
+        }
+
+        return array2D;
+    }
+
+    private async Task OnCellClick(int row, int col)
+    {
+        if (gridData[row, col] == 5 || gridData[row, col] == -1)
+        {
+            return;
+        }
+
+        var gameData = new GameData
+            {
+                Player1 = GameDataService.Player1Grid,
+                Player2 = GameDataService.Player2Grid,
+                ClickedRow = row,
+                ClickedCol = col,
+                IsPlayer1Turn = GameDataService.IsPlayer1Turn
+            };
+
+        var updatedGameData = await ApiService.SendGameDataAsync(gameData);
+
+        if (updatedGameData != null)
+        {
+            GameDataService.SetGameData(updatedGameData.Player1, updatedGameData.Player2, updatedGameData.IsPlayer1Turn, updatedGameData.Winner);
+            UpdateGridData();
+        }
+    }
+
+    private string GetCellStyle(int value)
+    {
+        return value switch
+        {
+            -1 => "background-color: red;",
+            5 => "background-color: blue;",
+            _ => ""
+        };
+    }
+
+    public void Dispose()
+    {
+        GameDataService.OnChange -= UpdateGridData;
+    }
 }
 
-<h3>Ally Map</h3>
-<Map GridData="gridData" /> 
+<h3>La grille de l'adversaire</h3>
+@if (!string.IsNullOrEmpty(GameDataService.Winner))
+{
+    <h2>@GameDataService.Winner</h2>
+}
+<table style="border-collapse: collapse;">
+    @for (int row = 0; row < gridData.GetLength(0); row++)
+    {
+        <tr>
+            @for (int col = 0; col < gridData.GetLength(1); col++)
+            {
+                int _row = row;
+                int _col = col;
+                string cellStyle = GetCellStyle(gridData[_row, _col]);
+
+                <td style="padding: 0; margin: 0; border: none;">
+                    <button @onclick="() => OnCellClick(_row, _col)" style="width: 40px; height: 40px; margin: 0; padding: 0; @cellStyle">
+                        &nbsp;
+                    </button>
+                </td>
+            }
+        </tr>
+    }s
+</table>

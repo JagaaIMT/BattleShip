@@ -1,9 +1,80 @@
-<!-- Components/Map/AllyMap.razor -->
-@inject HttpClient Http
+@inject BattleShip.App.Services.GameDataService GameDataService
+@using BattleShip.Models
 
 @code {
-    private int[,] gridData = new int[10, 10];
+    private int[,] gridData;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        GameDataService.OnChange += UpdateGridData;
+        UpdateGridData();
+    }
+
+    private void UpdateGridData()
+    {
+        if (GameDataService.Player1Grid != null)
+        {
+            gridData = ConvertTo2DArray(GameDataService.Player1Grid);
+            StateHasChanged();
+        }
+    }
+
+    private int[,] ConvertTo2DArray(List<List<int>> jaggedList)
+    {
+        if (jaggedList == null || jaggedList.Count == 0 || jaggedList[0].Count == 0)
+        {
+            return new int[0, 0];
+        }
+
+        int rows = jaggedList.Count;
+        int cols = jaggedList[0].Count;
+        int[,] array2D = new int[rows, cols];
+
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < cols; j++)
+            {
+                array2D[i, j] = jaggedList[i][j];
+            }
+        }
+
+        return array2D;
+    }
+
+    private string GetCellStyle(int value)
+    {
+        return value switch
+        {
+            -1 => "background-color: red;",
+            5 => "background-color: blue;",
+            _ => ""
+        };
+    }
+
+    public void Dispose()
+    {
+        GameDataService.OnChange -= UpdateGridData;
+    }
 }
 
-<h3>Enemy Map</h3>
-<Map GridData="gridData" /> 
+<h3>Votre grille de jeu</h3>
+<table style="border-collapse: collapse;">
+    @for (int row = 0; row < gridData.GetLength(0); row++)
+    {
+        <tr>
+            @for (int col = 0; col < gridData.GetLength(1); col++)
+            {
+                int _row = row;
+                int _col = col;
+                string cellStyle = GetCellStyle(gridData[_row, _col]);
+
+                <td style="padding: 0; margin: 0; border: none;">
+                    <button disabled style="width: 40px; height: 40px; margin: 0; padding: 0; @cellStyle">
+                        &nbsp;
+                    </button>
+                </td>
+            }
+        </tr>
+    }
+</table>

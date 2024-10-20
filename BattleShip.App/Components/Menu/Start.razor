@@ -1,0 +1,26 @@
+﻿<!-- BattleShip.App/Components/Menu/Start.razor -->
+@using BattleShip.Models
+@using System.Text.Json
+@inject BattleShip.App.Services.ApiService ApiService
+@inject BattleShip.App.Services.GameDataService GameDataService
+<button @onclick="StartGame">Commencer une partie</button>
+
+@code {
+    private GameData gameData;
+
+    private async Task StartGame()
+    {
+        var gameStart = new GameStart
+            {
+                GameType = "Standard",
+                GridX = 5,
+                GridY = 5
+            };
+
+        gameData = await ApiService.StartGameAsync(gameStart);
+        if (gameData != null)
+        {
+            GameDataService.SetGameData(gameData.Player1, gameData.Player2, true, string.Empty);
+        }
+    }
+}

@@ -1,1 +1,3 @@
-# BattleShip
+Autheurs :
+EL-MOKADEM Hamza
+MICHEL-SAINTE-ROSE Jagaa

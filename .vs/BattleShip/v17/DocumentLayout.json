@@ -1,0 +1,171 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jagaa\\source\\repos\\BattleShip\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{79618EF0-36FB-4186-A9B6-3F0143381BE4}|BattleShip.App\\BattleShip.App.csproj|c:\\users\\jagaa\\source\\repos\\battleship\\battleship.app\\components\\map\\allymap.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79618EF0-36FB-4186-A9B6-3F0143381BE4}|BattleShip.App\\BattleShip.App.csproj|solutionrelative:battleship.app\\components\\map\\allymap.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79618EF0-36FB-4186-A9B6-3F0143381BE4}|BattleShip.App\\BattleShip.App.csproj|c:\\users\\jagaa\\source\\repos\\battleship\\battleship.app\\components\\map\\enemymap.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79618EF0-36FB-4186-A9B6-3F0143381BE4}|BattleShip.App\\BattleShip.App.csproj|solutionrelative:battleship.app\\components\\map\\enemymap.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79618EF0-36FB-4186-A9B6-3F0143381BE4}|BattleShip.App\\BattleShip.App.csproj|c:\\users\\jagaa\\source\\repos\\battleship\\battleship.app\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79618EF0-36FB-4186-A9B6-3F0143381BE4}|BattleShip.App\\BattleShip.App.csproj|solutionrelative:battleship.app\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F308BCB-F050-4B92-89A7-6BF2CDD30FDF}|BattleShip.API\\BattleShip.API.csproj|c:\\users\\jagaa\\source\\repos\\battleship\\battleship.api\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F308BCB-F050-4B92-89A7-6BF2CDD30FDF}|BattleShip.API\\BattleShip.API.csproj|solutionrelative:battleship.api\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79618EF0-36FB-4186-A9B6-3F0143381BE4}|BattleShip.App\\BattleShip.App.csproj|c:\\users\\jagaa\\source\\repos\\battleship\\battleship.app\\layouts\\main.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79618EF0-36FB-4186-A9B6-3F0143381BE4}|BattleShip.App\\BattleShip.App.csproj|solutionrelative:battleship.app\\layouts\\main.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9E30465-4F93-407F-859F-EC7229627033}|BattleShip.Models\\BattleShip.Models.csproj|c:\\users\\jagaa\\source\\repos\\battleship\\battleship.models\\gamestart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9E30465-4F93-407F-859F-EC7229627033}|BattleShip.Models\\BattleShip.Models.csproj|solutionrelative:battleship.models\\gamestart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79618EF0-36FB-4186-A9B6-3F0143381BE4}|BattleShip.App\\BattleShip.App.csproj|c:\\users\\jagaa\\source\\repos\\battleship\\battleship.app\\components\\menu\\start.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79618EF0-36FB-4186-A9B6-3F0143381BE4}|BattleShip.App\\BattleShip.App.csproj|solutionrelative:battleship.app\\components\\menu\\start.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79618EF0-36FB-4186-A9B6-3F0143381BE4}|BattleShip.App\\BattleShip.App.csproj|c:\\users\\jagaa\\source\\repos\\battleship\\battleship.app\\services\\gamedataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79618EF0-36FB-4186-A9B6-3F0143381BE4}|BattleShip.App\\BattleShip.App.csproj|solutionrelative:battleship.app\\services\\gamedataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MenuController.cs",
+              "DocumentMoniker": "C:\\Users\\jagaa\\source\\repos\\BattleShip\\BattleShip.API\\Controllers\\MenuController.cs",
+              "RelativeDocumentMoniker": "BattleShip.API\\Controllers\\MenuController.cs",
+              "ToolTip": "C:\\Users\\jagaa\\source\\repos\\BattleShip\\BattleShip.API\\Controllers\\MenuController.cs",
+              "RelativeToolTip": "BattleShip.API\\Controllers\\MenuController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAowDYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T18:56:56.877Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GameStart.cs",
+              "DocumentMoniker": "C:\\Users\\jagaa\\source\\repos\\BattleShip\\BattleShip.Models\\GameStart.cs",
+              "RelativeDocumentMoniker": "BattleShip.Models\\GameStart.cs",
+              "ToolTip": "C:\\Users\\jagaa\\source\\repos\\BattleShip\\BattleShip.Models\\GameStart.cs",
+              "RelativeToolTip": "BattleShip.Models\\GameStart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T20:54:09.241Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Main.razor",
+              "DocumentMoniker": "C:\\Users\\jagaa\\source\\repos\\BattleShip\\BattleShip.App\\Layouts\\Main.razor",
+              "RelativeDocumentMoniker": "BattleShip.App\\Layouts\\Main.razor",
+              "ToolTip": "C:\\Users\\jagaa\\source\\repos\\BattleShip\\BattleShip.App\\Layouts\\Main.razor",
+              "RelativeToolTip": "BattleShip.App\\Layouts\\Main.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-20T21:09:19.662Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Start.razor",
+              "DocumentMoniker": "C:\\Users\\jagaa\\source\\repos\\BattleShip\\BattleShip.App\\Components\\Menu\\Start.razor",
+              "RelativeDocumentMoniker": "BattleShip.App\\Components\\Menu\\Start.razor",
+              "ToolTip": "C:\\Users\\jagaa\\source\\repos\\BattleShip\\BattleShip.App\\Components\\Menu\\Start.razor",
+              "RelativeToolTip": "BattleShip.App\\Components\\Menu\\Start.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-20T20:18:32.946Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApiService.cs",
+              "DocumentMoniker": "C:\\Users\\jagaa\\source\\repos\\BattleShip\\BattleShip.App\\Services\\ApiService.cs",
+              "RelativeDocumentMoniker": "BattleShip.App\\Services\\ApiService.cs",
+              "ToolTip": "C:\\Users\\jagaa\\source\\repos\\BattleShip\\BattleShip.App\\Services\\ApiService.cs",
+              "RelativeToolTip": "BattleShip.App\\Services\\ApiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T20:40:45.79Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GameDataService.cs",
+              "DocumentMoniker": "C:\\Users\\jagaa\\source\\repos\\BattleShip\\BattleShip.App\\Services\\GameDataService.cs",
+              "RelativeDocumentMoniker": "BattleShip.App\\Services\\GameDataService.cs",
+              "ToolTip": "C:\\Users\\jagaa\\source\\repos\\BattleShip\\BattleShip.App\\Services\\GameDataService.cs",
+              "RelativeToolTip": "BattleShip.App\\Services\\GameDataService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T20:11:12.125Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EnemyMap.razor",
+              "DocumentMoniker": "C:\\Users\\jagaa\\source\\repos\\BattleShip\\BattleShip.App\\Components\\Map\\EnemyMap.razor",
+              "RelativeDocumentMoniker": "BattleShip.App\\Components\\Map\\EnemyMap.razor",
+              "ToolTip": "C:\\Users\\jagaa\\source\\repos\\BattleShip\\BattleShip.App\\Components\\Map\\EnemyMap.razor",
+              "RelativeToolTip": "BattleShip.App\\Components\\Map\\EnemyMap.razor",
+              "ViewState": "AgIAAD4AAAAAAAAAAADwv0sAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-20T21:18:34.995Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AllyMap.razor",
+              "DocumentMoniker": "C:\\Users\\jagaa\\source\\repos\\BattleShip\\BattleShip.App\\Components\\Map\\AllyMap.razor",
+              "RelativeDocumentMoniker": "BattleShip.App\\Components\\Map\\AllyMap.razor",
+              "ToolTip": "C:\\Users\\jagaa\\source\\repos\\BattleShip\\BattleShip.App\\Components\\Map\\AllyMap.razor",
+              "RelativeToolTip": "BattleShip.App\\Components\\Map\\AllyMap.razor",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAEAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-20T21:27:23.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
